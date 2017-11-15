@@ -1,4 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <targetVersion>0.17.1557</targetVersion>
+  <name>Technology Blueprints</name>
+  <author>Smuffle, LOLKAT_KOMRAD_94</author>
+  <url>http://rimworldgame.com</url> <!--Will have to enter forum post link-->
+  <description>Adds Technology Blueprints to the mod - find them to boost your technology level or trade them! In time, you could even make some yourself.</description> <!--Will have to update-->
 </ModMetaData>

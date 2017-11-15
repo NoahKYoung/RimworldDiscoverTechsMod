@@ -9,6 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "About", "About", "{24FD99B2
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Defs", "Defs", "{373BC627-57DB-432C-9728-B1893DCD4DE5}"
+	ProjectSection(SolutionItems) = preProject
+		..\Defs\Blueprints.xml = ..\Defs\Blueprints.xml
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RimworldDiscoverTechs", "RimworldDiscoverTechs\RimworldDiscoverTechs.csproj", "{D58FFAD1-D489-4981-8A45-383E0D49BAB0}"
 EndProject
@@ -16,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RimworldDiscoverTechsMod", 
 	ProjectSection(SolutionItems) = preProject
 		..\README.md = ..\README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patches", "Patches", "{23192FC3-B44A-4B2A-99A0-B5D2CACDA4E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +39,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{24FD99B2-A11B-4B8A-AA6C-A064E8F14032} = {188E558F-040D-4CB6-9425-D05A700520C7}
 		{373BC627-57DB-432C-9728-B1893DCD4DE5} = {188E558F-040D-4CB6-9425-D05A700520C7}
+		{23192FC3-B44A-4B2A-99A0-B5D2CACDA4E8} = {188E558F-040D-4CB6-9425-D05A700520C7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6CFF9502-0925-4D9D-9751-E539C7C43B74}

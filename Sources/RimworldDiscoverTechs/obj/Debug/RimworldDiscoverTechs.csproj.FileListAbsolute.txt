@@ -1,0 +1,4 @@
+C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Assemblies\RimworldDiscoverTechs.dll
+C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\obj\Debug\RimworldDiscoverTechs.csprojResolveAssemblyReference.cache
+C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\obj\Debug\RimworldDiscoverTechs.csproj.CoreCompileInputs.cache
+C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\obj\Debug\RimworldDiscoverTechs.dll

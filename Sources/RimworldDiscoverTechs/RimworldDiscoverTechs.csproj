@@ -47,7 +47,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\CompUseEffect_UnlockTechnology.cs" />
+    <Compile Include="Classes\CompBlueprint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Patches\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About\About.xml" />
+    <Content Include="About\Preview.png" />
+    <None Include="Defs\Job_Defs\Job_Defs.xml" />
+    <None Include="Defs\Recipes\Recipes_Blueprints.xml" />
+    <None Include="Defs\ThingDefs_Items\Blueprints.xml" />
+    <None Include="Defs\ThingDefs_Items\Items_Artifacts.xml" />
+    <None Include="Defs\ThingDefs_Items\Items_Blueprints.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@
 			<inspectorTabs>
 				<li>ITab_Bills</li>
 			</inspectorTabs>
-			 <building>
+			<building>
 				<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			</building>
 		</value>

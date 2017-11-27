@@ -7,7 +7,7 @@
     <thingClass>ThingWithComps</thingClass>
     <description>blueprint prototype</description>
     <graphicData>
-      <texPath>Things/Item/Blueprints/Blueprint_Placeholder</texPath>
+      <texPath>Things/Item/Blueprints/Blueprint_Old</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>

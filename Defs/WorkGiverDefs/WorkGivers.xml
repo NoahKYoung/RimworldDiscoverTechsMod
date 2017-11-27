@@ -9,6 +9,7 @@
     <workType>Crafting</workType>
     <priorityInType>80</priorityInType>
 	<fixedBillGiverDefs>
+	  <li>CraftingSpot</li>
 	  <li>SimpleResearchBench</li>
 	  <li>HiTechResearchBench</li>
     </fixedBillGiverDefs>

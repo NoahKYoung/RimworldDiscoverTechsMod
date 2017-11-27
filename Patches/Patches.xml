@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/Defs/ThingDef[defName="HiTechResearchBench"]/inspectorTabs/text</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName="HiTechResearchBench"]/graphicData</xpath>
 		<value>
-			<li>ITab_Bills</li>
+			<inspectorTabs>
+				<li>ITab_Bills</li>
+			</inspectorTabs>
+			 <building>
+				<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			</building>
 		</value>
 	</Operation>
 </Patch>

@@ -6,28 +6,56 @@ namespace RimworldDiscoverTechs
 {
     public class CompBlueprint: CompUsable
     {
-        //public Tech techLevel;
+        public TechLevel techLevel;
+        static Random rand;
 
         protected override string FloatMenuOptionLabel
         {
             get
             {
-                return string.Format("Use " + base.Props.useLabel); // This is what is shown on menu
+                return string.Format(base.Props.useLabel); // This is what is shown on tooltip menu
             }
         }
 
         public override void Initialize(CompProperties props)
         {
             base.Initialize(props);
-            // Todo : set a era for research
+
+            rand = new Random();
+            int randTechLevel = rand.Next(1, 5);
+
+            // Sets this blueprint's tech level
+            switch (randTechLevel)
+            {
+                case 1:
+                    this.techLevel = TechLevel.Neolithic;
+                    break;
+
+                case 2:
+                    this.techLevel = TechLevel.Medieval;
+                    break;
+
+                case 3:
+                    this.techLevel = TechLevel.Industrial;
+                    break;
+
+                case 4:
+                    this.techLevel = TechLevel.Spacer;
+                    break;
+
+                default:
+                    this.techLevel = TechLevel.Neolithic;
+                    break;
+            }
         }
 
         public override string TransformLabel(string label)
         {
-            return label; // This is the final item name - put actual tech here.
-            //return techLevel + " " + label; // This is the final item name - put actual tech here.
+            // Item's name with tech level
+            return string.Format(techLevel.ToStringHuman()+" "+label);
         }
 
+        // allow stacking same types of blueprints TODO
         public override bool AllowStackWith(Thing other)
         {
             if (!base.AllowStackWith(other))

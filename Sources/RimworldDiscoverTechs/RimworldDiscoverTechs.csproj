@@ -52,15 +52,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Defs\Recipes\" />
     <Folder Include="Patches\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About\About.xml" />
     <Content Include="About\Preview.png" />
     <None Include="Defs\Job_Defs\Job_Defs.xml" />
-    <None Include="Defs\Recipes\Recipes_Blueprints.xml" />
-    <None Include="Defs\ThingDefs_Items\Blueprints.xml" />
-    <None Include="Defs\ThingDefs_Items\Items_Artifacts.xml" />
     <None Include="Defs\ThingDefs_Items\Items_Blueprints.xml" />
   </ItemGroup>
   <ItemGroup>

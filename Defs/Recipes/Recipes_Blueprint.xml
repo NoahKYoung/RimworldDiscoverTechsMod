@@ -36,6 +36,7 @@
 	<recipeUsers>
 		<li>CraftingSpot</li>
 		<li>HiTechResearchBench</li>
+		<li>ComponentAssemblyBench</li>
 	</recipeUsers>
   </RecipeDef>
   
@@ -72,7 +73,7 @@
 		</skillRequirements>
     <workSkill>Intellectual</workSkill>
 	<recipeUsers>
-		<li>CraftingSpot</li>
+		<li>ComponentAssemblyBench</li>
 		<li>HiTechResearchBench</li>
 	</recipeUsers>
   </RecipeDef>

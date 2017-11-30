@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Linq;
+using System.Diagnostics;
+using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
@@ -15,6 +18,33 @@ namespace RimworldDiscoverTechs
             {
                 return string.Format(base.Props.useLabel); // This is what is shown on tooltip menu
             }
+        }
+
+        [DebuggerHidden]
+        public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn myPawn)
+        {
+            // Hide if nothing is available!
+            IEnumerable<FloatMenuOption> returnIEnumerables = base.CompFloatMenuOptions(myPawn);
+
+            if(!AnyTargetableTechnology())
+            {
+                returnIEnumerables.Concat<FloatMenuOption>(new FloatMenuOption(FloatMenuOptionLabel + " (No available technology)", null, MenuOptionPriority.Default, null, null, 0f, null, null));
+            }
+
+            return returnIEnumerables;
+        }
+
+        public bool AnyTargetableTechnology()
+        {
+            bool retBool = false;
+            List<ResearchProjectDef> techList = DefDatabase<ResearchProjectDef>.AllDefsListForReading.FindAll((ResearchProjectDef x) => ((x.techLevel == techLevel) && (!x.IsFinished) && (x.CanStartNow)));
+
+            if(techList.Count == 0)
+            {
+                retBool = true;
+            }
+
+            return retBool;
         }
 
         public override void Initialize(CompProperties props)

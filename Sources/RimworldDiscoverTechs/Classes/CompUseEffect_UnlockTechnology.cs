@@ -15,12 +15,25 @@ namespace RimworldDiscoverTechs
 
             // Get Tech Level & appropriate techs
             TechLevel techLevel = this.parent.GetComp<CompBlueprint>().techLevel;
-            List<ResearchProjectDef> techList = DefDatabase<ResearchProjectDef>.AllDefsListForReading.FindAll((ResearchProjectDef x) => ((x.techLevel == techLevel) && (!x.IsFinished)));
+            List<ResearchProjectDef> techList = DefDatabase<ResearchProjectDef>.AllDefsListForReading.FindAll((ResearchProjectDef x) => ((x.techLevel == techLevel) && (!x.IsFinished) && (x.CanStartNow)));
             ResearchProjectDef chosenResearchProject = techList.RandomElement<ResearchProjectDef>();
 
-            Find.ResearchManager.InstantFinish(chosenResearchProject, false);
+            if(chosenResearchProject == null)
+            {
+                // RESEARCH IS NULL! Do nothing.
+                return;
+            }
 
-            Messages.Message("The "+techLevel.ToStringHuman()+" technology blueprint revealed the secrets of "+chosenResearchProject.label.ToString()+ ".", MessageTypeDefOf.PositiveEvent); // Adds a message top left
+            if (Faction.OfPlayer.def.techLevel >= techLevel)
+            {
+                Find.ResearchManager.InstantFinish(chosenResearchProject, false);
+                Messages.Message("The " + techLevel.ToStringHuman() + " technology blueprint layed out how " + chosenResearchProject.label.ToString() + " works.", MessageTypeDefOf.PositiveEvent); // Adds a message top left
+            }
+            else
+            {
+                Find.ResearchManager.InstantFinish(chosenResearchProject, false);
+                Messages.Message("The " + techLevel.ToStringHuman() + " technology blueprint has helped delve into the secrets of " + chosenResearchProject.label.ToString() + ".", MessageTypeDefOf.PositiveEvent); // Adds a message top left
+            }
         }
     }
 }

@@ -11,4 +11,108 @@
 			</building>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/PawnKindDef[defName="TribalChief"]/apparelTags</xpath>
+		<value>
+			<inventoryOptions>
+				<skipChance>0.1</skipChance>
+				<subOptionsChooseOne>
+					<li>
+					  <thingDef>TechnologyBlueprint</thingDef>
+					  <countRange>
+						<min>1</min>
+						<max>1</max>
+					  </countRange>
+					</li>
+				</subOptionsChooseOne>
+			</inventoryOptions>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/PawnKindDef[defName="TownCouncilman"]/apparelTags</xpath>
+		<value>
+			<inventoryOptions>
+				<thingDef>TechnologyBlueprint</thingDef>
+				<countRange>
+					<min>1</min>
+					<max>1</max>
+				</countRange>
+			</inventoryOptions>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/PawnKindDef[defName="SpaceSoldier"]/apparelTags</xpath>
+		<value>
+			<inventoryOptions>
+				<skipChance>0.1</skipChance>
+				<subOptionsChooseOne>
+					<li>
+					  <thingDef>TechnologyBlueprint</thingDef>
+					  <countRange>
+						<min>1</min>
+						<max>2</max>
+					  </countRange>
+					</li>
+				</subOptionsChooseOne>
+			</inventoryOptions>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/PawnKindDef[defName="SpaceRefugee"]/apparelTags</xpath>
+		<value>
+			<inventoryOptions>
+				<skipChance>0.2</skipChance>
+				<subOptionsChooseOne>
+					<li>
+					  <thingDef>TechnologyBlueprint</thingDef>
+					  <countRange>
+						<min>1</min>
+						<max>1</max>
+					  </countRange>
+					</li>
+				</subOptionsChooseOne>
+			</inventoryOptions>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/PawnKindDef[defName="PirateBoss"]/factionLeader</xpath>
+		<value>
+			<inventoryOptions>
+				<skipChance>0.1</skipChance>
+				<subOptionsChooseOne>
+					<li>
+					  <thingDef>TechnologyBlueprint</thingDef>
+					  <countRange>
+						<min>1</min>
+						<max>2</max>
+					  </countRange>
+					</li>
+				</subOptionsChooseOne>
+			</inventoryOptions>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/PawnKindDef[defName="MercenaryElite"]/labelPlural</xpath>
+		<value>
+			<inventoryOptions>
+				<skipChance>0.4</skipChance>
+				<subOptionsChooseOne>
+					<li>
+					  <thingDef>TechnologyBlueprint</thingDef>
+					  <countRange>
+						<min>1</min>
+						<max>1</max>
+					  </countRange>
+					</li>
+				</subOptionsChooseOne>
+			</inventoryOptions>
+		</value>
+	</Operation>
+	
 </Patch>

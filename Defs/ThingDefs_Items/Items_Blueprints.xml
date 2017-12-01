@@ -10,19 +10,25 @@
       <texPath>Things/Item/Blueprints/Blueprint_Old</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<itemGeneratorTags>
+      <li>SpecialReward</li>
+    </itemGeneratorTags>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <stackLimit>1</stackLimit>
     <tradeNeverStack>true</tradeNeverStack>
+	<useHitPoints>true</useHitPoints>
     <statBases>
       <MarketValue>1000</MarketValue>
       <MaxHitPoints>80</MaxHitPoints>
       <Mass>0.2</Mass>
+	  <Flammability>0.9</Flammability>
       <DeteriorationRate>2.0</DeteriorationRate>
     </statBases>
     <thingCategories>
       <li>Items</li>
     </thingCategories>
     <drawGUIOverlay>false</drawGUIOverlay>
+	<tradeability>Sellable</tradeability>
     <techLevel>Neolithic</techLevel>
     <tradeTags>
       <li>Exotic</li>

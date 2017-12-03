@@ -7,7 +7,7 @@ namespace RimworldDiscoverTechs
 {
     public class CompUseEffect_UnlockTechnology : CompUseEffect
     {
-        private const float ResearchGainAmount = 50000f;
+        private const float ResearchGainAmount = (500f / 0.007f);
 
         public override void DoEffect(Pawn usedBy)
         {
@@ -28,12 +28,20 @@ namespace RimworldDiscoverTechs
             if (Faction.OfPlayer.def.techLevel >= techLevel)
             {
                 Find.ResearchManager.InstantFinish(chosenResearchProject, false);
-                Messages.Message("The " + techLevel.ToStringHuman() + " technology blueprint layed out how " + chosenResearchProject.label.ToString() + " works.", MessageTypeDefOf.PositiveEvent); // Adds a message top left
+                Messages.Message("The " + techLevel.ToStringHuman() + " technology blueprint revealed everything about " + chosenResearchProject.label.ToString() + ".", MessageTypeDefOf.PositiveEvent); // Adds a message top left
             }
             else
             {
-                Find.ResearchManager.InstantFinish(chosenResearchProject, false);
-                Messages.Message("The " + techLevel.ToStringHuman() + " technology blueprint has helped delve into the secrets of " + chosenResearchProject.label.ToString() + ".", MessageTypeDefOf.PositiveEvent); // Adds a message top left
+                // Change current project just the time to add research points then restore it
+                ResearchProjectDef storedResearchProject = Find.ResearchManager.currentProj;
+                Find.ResearchManager.currentProj = chosenResearchProject;
+
+                Find.ResearchManager.ResearchPerformed(ResearchGainAmount, usedBy);
+
+                Find.ResearchManager.currentProj = storedResearchProject;
+
+                //Find.ResearchManager.InstantFinish(chosenResearchProject, false);
+                Messages.Message("The " + techLevel.ToStringHuman() + " technology blueprint is complicated, but it helped understand " + chosenResearchProject.label.ToString() + ".", MessageTypeDefOf.PositiveEvent); // Adds a message top left
             }
         }
     }

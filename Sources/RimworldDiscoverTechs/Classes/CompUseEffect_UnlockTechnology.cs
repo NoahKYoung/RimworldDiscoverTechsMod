@@ -21,6 +21,7 @@ namespace RimworldDiscoverTechs
             if(chosenResearchProject == null)
             {
                 // RESEARCH IS NULL! Do nothing.
+                Log.Error("No research has been selected because none fit the conditions.");
                 return;
             }
 

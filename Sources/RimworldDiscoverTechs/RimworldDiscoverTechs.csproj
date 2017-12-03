@@ -51,20 +51,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\CompBlueprintTech.cs" />
+    <Compile Include="Classes\CompProperties_BlueprintTech.cs" />
     <Compile Include="Classes\CompUseEffect_UnlockTechnology.cs" />
     <Compile Include="Classes\CompBlueprint.cs" />
     <Compile Include="Classes\HarmonyPatching.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Defs\Recipes\" />
-    <Folder Include="Patches\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="About\About.xml" />
     <Content Include="About\Preview.png" />
-    <None Include="Defs\Job_Defs\Job_Defs.xml" />
-    <None Include="Defs\ThingDefs_Items\Items_Blueprints.xml" />
+    <Content Include="Defs\Job_Defs\Job_Defs.xml" />
+    <Content Include="Defs\Recipes\Recipes_Blueprint.xml" />
+    <Content Include="Defs\ThingDefs_Items\ThingDefs_Blueprints.xml" />
+    <Content Include="Defs\WorkGiverDefs\WorkGivers.xml" />
+    <Content Include="Patches\Patches.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

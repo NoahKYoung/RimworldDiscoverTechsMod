@@ -10,6 +10,7 @@ namespace RimworldDiscoverTechs
     public class CompBlueprint: CompUsable
     {
         public TechLevel techLevel;
+        public List<TechLevel> techLevels;
         static Random rand;
 
         protected override string FloatMenuOptionLabel
@@ -51,31 +52,19 @@ namespace RimworldDiscoverTechs
         {
             base.Initialize(props);
 
-            rand = new Random();
-            int randTechLevel = rand.Next(1, 5);
+            //Choose a random tech level from blueprints in there
+            techLevels = this.parent.GetComp<CompBlueprintTech>().Props.techLevels;
 
-            // Sets this blueprint's tech level
-            switch (randTechLevel)
+            if (techLevels != null)
             {
-                case 1:
-                    this.techLevel = TechLevel.Neolithic;
-                    break;
+                rand = new Random();
+                int index = rand.Next(techLevels.Count());
 
-                case 2:
-                    this.techLevel = TechLevel.Medieval;
-                    break;
-
-                case 3:
-                    this.techLevel = TechLevel.Industrial;
-                    break;
-
-                case 4:
-                    this.techLevel = TechLevel.Spacer;
-                    break;
-
-                default:
-                    this.techLevel = TechLevel.Neolithic;
-                    break;
+                techLevel = techLevels.ElementAt(index);
+            }
+            else
+            {
+                Log.Error("No tech levels listed for this blueprint!");
             }
         }
 

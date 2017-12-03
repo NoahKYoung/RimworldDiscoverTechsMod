@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>CraftBlueprintNeolithic</defName>
+    <label>craft neolithic blueprint</label>
+    <description>Craft a blueprint.</description>
+    <jobString>Crafting blueprint.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>4000</workAmount>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TechnologyBlueprint>1</TechnologyBlueprint>
+    </products>
+		<skillRequirements>
+			<Intellectual>10</Intellectual>
+		</skillRequirements>
+    <workSkill>Intellectual</workSkill>
+	<recipeUsers>
+		<li>CraftingSpot</li>
+		<li>HiTechResearchBench</li>
+		<li>ComponentAssemblyBench</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>CraftBlueprintSpacer</defName>
+    <label>craft spacer blueprint</label>
+    <description>Craft a blueprint.</description>
+    <jobString>Crafting blueprint.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TechnologyBlueprint>1</TechnologyBlueprint>
+    </products>
+		<skillRequirements>
+			<Intellectual>12</Intellectual>
+		</skillRequirements>
+    <workSkill>Intellectual</workSkill>
+	<recipeUsers>
+		<li>ComponentAssemblyBench</li>
+		<li>HiTechResearchBench</li>
+	</recipeUsers>
+  </RecipeDef>
+	
+</Defs>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  
+  <WorkGiverDef>
+    <defName>DoBillsCraftBlueprint</defName>
+    <label>craft blueprint</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>80</priorityInType>
+	<fixedBillGiverDefs>
+	  <li>SimpleResearchBench</li>
+	  <li>HiTechResearchBench</li>
+    </fixedBillGiverDefs>
+    <billGiversAllHumanlikes>true</billGiversAllHumanlikes>
+    <billGiversAllHumanlikesCorpses>true</billGiversAllHumanlikesCorpses>
+    <verb>operate</verb>
+    <gerund>operating on</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+</Defs>

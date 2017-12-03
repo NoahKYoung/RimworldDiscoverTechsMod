@@ -14,7 +14,7 @@ namespace RimworldDiscoverTechs
             base.DoEffect(usedBy);
 
             // Get Tech Level & appropriate techs
-            TechLevel techLevel = this.parent.GetComp<CompBlueprint>().techLevel;
+            TechLevel techLevel = parent.GetComp<CompBlueprint>().techLevel;
             List<ResearchProjectDef> techList = DefDatabase<ResearchProjectDef>.AllDefsListForReading.FindAll((ResearchProjectDef x) => ((x.techLevel == techLevel) && (!x.IsFinished) && (x.CanStartNow)));
             ResearchProjectDef chosenResearchProject = techList.RandomElement<ResearchProjectDef>();
 

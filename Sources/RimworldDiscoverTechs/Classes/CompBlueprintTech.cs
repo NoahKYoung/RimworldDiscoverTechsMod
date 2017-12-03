@@ -8,7 +8,7 @@ namespace RimworldDiscoverTechs
         {
             get
             {
-                return (CompProperties_BlueprintTech)this.props;
+                return (CompProperties_BlueprintTech)props;
             }
         }
     }

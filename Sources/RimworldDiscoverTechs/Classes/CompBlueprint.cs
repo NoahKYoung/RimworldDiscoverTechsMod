@@ -4,10 +4,11 @@ using System.Diagnostics;
 using System.Collections.Generic;
 using RimWorld;
 using Verse;
+using Verse.AI;
 
 namespace RimworldDiscoverTechs
 {
-    public class CompBlueprint: CompUsable
+    public class CompBlueprint : CompUsable
     {
         public TechLevel techLevel;
         public List<TechLevel> techLevels;
@@ -17,32 +18,56 @@ namespace RimworldDiscoverTechs
         {
             get
             {
-                return string.Format(base.Props.useLabel); // This is what is shown on tooltip menu
+                return string.Format(techLevel.ToStringHuman() + " " + Props.useLabel); // This is what is shown on tooltip menu
             }
         }
 
         [DebuggerHidden]
         public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn myPawn)
         {
-            // Hide if nothing is available!
-            IEnumerable<FloatMenuOption> returnIEnumerables = base.CompFloatMenuOptions(myPawn);
-
-            if(!AnyTargetableTechnology())
+            // Hide if nothing is available; then execute standard functions to check.
+            if (!AnyTargetableTechnology())
             {
-                returnIEnumerables.Concat<FloatMenuOption>(new FloatMenuOption(FloatMenuOptionLabel + " (No available technology)", null, MenuOptionPriority.Default, null, null, 0f, null, null));
+                yield return new FloatMenuOption("Cannot use " + FloatMenuOptionLabel + " (No available technology)", null, MenuOptionPriority.Default, null, null, 0f, null, null);
             }
+            else if (!myPawn.CanReserve(parent, 1, -1, null, false))
+            {
+                yield return new FloatMenuOption("Cannot use " + FloatMenuOptionLabel + " (" + "Reserved".Translate() + ")", null, MenuOptionPriority.Default, null, null, 0f, null, null);
+            }
+            else
+            {
+                FloatMenuOption useopt = new FloatMenuOption("Use " + FloatMenuOptionLabel, delegate
+                {
+                    if (myPawn.CanReserveAndReach(parent, PathEndMode.Touch, Danger.Deadly, 1, -1, null, false))
+                    {
+                        foreach (CompUseEffect current in parent.GetComps<CompUseEffect>())
+                        {
+                            if (current.SelectedUseOption(myPawn))
+                            {
+                                return;
+                            }
+                        }
+                        TryStartUseJob(myPawn);
+                    }
+                }, MenuOptionPriority.Default, null, null, 0f, null, null);
+                yield return useopt;
+            }
+        }
 
-            return returnIEnumerables;
+        public override void PostExposeData()
+        {
+            base.PostExposeData();
+            Scribe_Values.Look<TechLevel>(ref techLevel, "techLevel");
         }
 
         public bool AnyTargetableTechnology()
         {
-            bool retBool = false;
+            bool retBool = true;
             List<ResearchProjectDef> techList = DefDatabase<ResearchProjectDef>.AllDefsListForReading.FindAll((ResearchProjectDef x) => ((x.techLevel == techLevel) && (!x.IsFinished) && (x.CanStartNow)));
 
             if(techList.Count == 0)
             {
-                retBool = true;
+                retBool = false;
             }
 
             return retBool;
@@ -53,7 +78,7 @@ namespace RimworldDiscoverTechs
             base.Initialize(props);
 
             //Choose a random tech level from blueprints in there
-            techLevels = this.parent.GetComp<CompBlueprintTech>().Props.techLevels;
+            techLevels = parent.GetComp<CompBlueprintTech>().Props.techLevels;
 
             if (techLevels != null)
             {
@@ -74,20 +99,27 @@ namespace RimworldDiscoverTechs
             return string.Format(techLevel.ToStringHuman()+" "+label);
         }
 
-        // allow stacking same types of blueprints TODO
+        // allow stacking same types of blueprints & disallows else
         public override bool AllowStackWith(Thing other)
         {
             if (!base.AllowStackWith(other))
             {
                 return false;
             }
-            return false;
+
+            CompBlueprint compBlueprint = other.TryGetComp<CompBlueprint>();
+            return compBlueprint != null && compBlueprint.techLevel == techLevel;
         }
 
         public override void PostSplitOff(Thing piece)
         {
             base.PostSplitOff(piece);
             CompBlueprint compBlueprint = piece.TryGetComp<CompBlueprint>();
+
+            if(compBlueprint != null)
+            {
+                compBlueprint.techLevel = techLevel;
+            }
         }
     }
 }

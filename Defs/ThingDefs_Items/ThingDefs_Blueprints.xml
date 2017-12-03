@@ -13,7 +13,7 @@
       <li>SpecialReward</li>
     </itemGeneratorTags>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>1</stackLimit>
+    <stackLimit>5</stackLimit>
     <tradeNeverStack>true</tradeNeverStack>
     <useHitPoints>true</useHitPoints>
     <statBases>
@@ -45,7 +45,7 @@
       <li Class="CompProperties_Usable">
         <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
         <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>Use technology blueprint to discover a new technology</useLabel>
+        <useLabel>technology blueprint</useLabel>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
@@ -69,7 +69,7 @@
       <li>SpecialReward</li>
     </itemGeneratorTags>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>1</stackLimit>
+    <stackLimit>5</stackLimit>
     <tradeNeverStack>true</tradeNeverStack>
 	  <useHitPoints>true</useHitPoints>
     <statBases>
@@ -99,7 +99,7 @@
       <li Class="CompProperties_Usable">
         <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
         <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>Use technology blueprint to discover a new technology</useLabel>
+        <useLabel>technology blueprint</useLabel>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
@@ -123,7 +123,7 @@
       <li>SpecialReward</li>
     </itemGeneratorTags>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>1</stackLimit>
+    <stackLimit>5</stackLimit>
     <tradeNeverStack>true</tradeNeverStack>
     <useHitPoints>true</useHitPoints>
     <statBases>
@@ -153,7 +153,7 @@
       <li Class="CompProperties_Usable">
         <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
         <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>Use technology blueprint to discover a new technology</useLabel>
+        <useLabel>technology blueprint</useLabel>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>

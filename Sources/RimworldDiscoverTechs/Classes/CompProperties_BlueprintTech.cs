@@ -10,7 +10,7 @@ namespace RimworldDiscoverTechs
 
         public CompProperties_BlueprintTech()
         {
-            this.compClass = typeof(CompBlueprintTech);
+            compClass = typeof(CompBlueprintTech);
         }
     }
 }

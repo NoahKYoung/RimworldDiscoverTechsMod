@@ -26,7 +26,7 @@
     <thingCategories>
       <li>Items</li>
     </thingCategories>
-    <drawGUIOverlay>false</drawGUIOverlay>
+    <drawGUIOverlay>true</drawGUIOverlay>
     <tradeability>Sellable</tradeability>
     <techLevel>Neolithic</techLevel>
     <tradeTags>
@@ -82,7 +82,7 @@
     <thingCategories>
       <li>Items</li>
     </thingCategories>
-    <drawGUIOverlay>false</drawGUIOverlay>
+    <drawGUIOverlay>true</drawGUIOverlay>
 	  <tradeability>Sellable</tradeability>
     <techLevel>Neolithic</techLevel>
     <tradeTags>
@@ -136,7 +136,7 @@
     <thingCategories>
       <li>Items</li>
     </thingCategories>
-    <drawGUIOverlay>false</drawGUIOverlay>
+    <drawGUIOverlay>true</drawGUIOverlay>
     <tradeability>Sellable</tradeability>
     <techLevel>Neolithic</techLevel>
     <tradeTags>

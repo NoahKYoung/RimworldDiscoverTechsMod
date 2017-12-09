@@ -387,11 +387,143 @@
 		<xpath>*/TraderKindDef[defName="Caravan_Neolithic_WarMerchant"]/stockGenerators</xpath>
 		<value>
 			<li Class="StockGenerator_SingleDef">
-				<thingDef>TechnologyBlueprint</thingDef>
+				<thingDef>TechnologyBlueprintOld</thingDef>
 				<price>Expensive</price>
 				<countRange>
 				  <min>1</min>
 				  <max>3</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintNew</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>0</min>
+				  <max>1</max>
+				</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraderKindDef[defName="Caravan_Outlander_PirateMerchant"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintOld</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>0</min>
+				  <max>4</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintNew</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>0</min>
+				  <max>2</max>
+				</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraderKindDef[defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintOld</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>0</min>
+				  <max>2</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintNew</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>1</min>
+				  <max>2</max>
+				</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraderKindDef[defName="Base_Neolithic_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintOld</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>2</min>
+				  <max>4</max>
+				</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintOld</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>0</min>
+				  <max>2</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintNew</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>1</min>
+				  <max>4</max>
+				</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraderKindDef[defName="Orbital_Exotic"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintOld</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>0</min>
+				  <max>2</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintNew</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>0</min>
+				  <max>3</max>
+				</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraderKindDef[defName="Orbital_PirateMerchant"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintOld</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>0</min>
+				  <max>2</max>
+				</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>TechnologyBlueprintNew</thingDef>
+				<price>Expensive</price>
+				<countRange>
+				  <min>0</min>
+				  <max>1</max>
 				</countRange>
 			</li>
 		</value>

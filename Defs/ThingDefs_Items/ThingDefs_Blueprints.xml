@@ -164,4 +164,216 @@
     </comps>
   </ThingDef>
   
+  <ThingDef ParentName="ResourceBase">
+    <defName>TechnologyBlueprintNeolithic</defName>
+    <label>neolithic technology blueprint</label>
+    <thingClass>ThingWithComps</thingClass>
+    <description>A neolithic technology blueprint. By using it, you learn a research technology.</description>
+    <graphicData>
+      <texPath>Things/Item/Blueprints/Blueprint_Old</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	  <itemGeneratorTags>
+      <li>SpecialReward</li>
+    </itemGeneratorTags>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>5</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+	  <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+	  <Flammability>0.9</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <tradeability>Stockable</tradeability>
+    <techLevel>Neolithic</techLevel>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <comps>
+      <li Class="RimworldDiscoverTechs.CompProperties_BlueprintTech">
+        <compClass>RimworldDiscoverTechs.CompBlueprintTech</compClass>
+        <techLevels>
+          <li>Neolithic</li>
+        </techLevels>
+      </li>
+      <li Class="CompProperties_Usable">
+        <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
+        <useJob>UseTechnologyBlueprint</useJob>
+        <useLabel>technology blueprint</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>TechnologyBlueprintMedieval</defName>
+    <label>medieval technology blueprint</label>
+    <thingClass>ThingWithComps</thingClass>
+    <description>A medieval technology blueprint. By using it, you learn a research technology.</description>
+    <graphicData>
+      <texPath>Things/Item/Blueprints/Blueprint_Old</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	  <itemGeneratorTags>
+      <li>SpecialReward</li>
+    </itemGeneratorTags>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>5</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+	  <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+	  <Flammability>0.9</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <tradeability>Stockable</tradeability>
+    <techLevel>Medieval</techLevel>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <comps>
+      <li Class="RimworldDiscoverTechs.CompProperties_BlueprintTech">
+        <compClass>RimworldDiscoverTechs.CompBlueprintTech</compClass>
+        <techLevels>
+          <li>Medieval</li>
+        </techLevels>
+      </li>
+      <li Class="CompProperties_Usable">
+        <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
+        <useJob>UseTechnologyBlueprint</useJob>
+        <useLabel>technology blueprint</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>TechnologyBlueprintIndustrial</defName>
+    <label>industrial technology blueprint</label>
+    <thingClass>ThingWithComps</thingClass>
+    <description>An industrial technology blueprint. By using it, you learn a research technology.</description>
+    <graphicData>
+      <texPath>Things/Item/Blueprints/Blueprint_New</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	  <itemGeneratorTags>
+      <li>SpecialReward</li>
+    </itemGeneratorTags>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>5</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+	  <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+	  <Flammability>0.9</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <tradeability>Stockable</tradeability>
+    <techLevel>Industrial</techLevel>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <comps>
+      <li Class="RimworldDiscoverTechs.CompProperties_BlueprintTech">
+        <compClass>RimworldDiscoverTechs.CompBlueprintTech</compClass>
+        <techLevels>
+          <li>Industrial</li>
+        </techLevels>
+      </li>
+      <li Class="CompProperties_Usable">
+        <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
+        <useJob>UseTechnologyBlueprint</useJob>
+        <useLabel>technology blueprint</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>TechnologyBlueprintSpacer</defName>
+    <label>spacer technology blueprint</label>
+    <thingClass>ThingWithComps</thingClass>
+    <description>A spacer technology blueprint. By using it, you learn a research technology.</description>
+    <graphicData>
+      <texPath>Things/Item/Blueprints/Blueprint_New</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	  <itemGeneratorTags>
+      <li>SpecialReward</li>
+    </itemGeneratorTags>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>5</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+	  <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+	  <Flammability>0.9</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <tradeability>Stockable</tradeability>
+    <techLevel>Spacer</techLevel>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <comps>
+      <li Class="RimworldDiscoverTechs.CompProperties_BlueprintTech">
+        <compClass>RimworldDiscoverTechs.CompBlueprintTech</compClass>
+        <techLevels>
+          <li>Spacer</li>
+        </techLevels>
+      </li>
+      <li Class="CompProperties_Usable">
+        <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
+        <useJob>UseTechnologyBlueprint</useJob>
+        <useLabel>technology blueprint</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
 </Defs>

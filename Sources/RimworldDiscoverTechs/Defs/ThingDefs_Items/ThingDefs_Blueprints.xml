@@ -27,7 +27,7 @@
       <li>Items</li>
     </thingCategories>
     <drawGUIOverlay>true</drawGUIOverlay>
-    <tradeability>Sellable</tradeability>
+    <tradeability>Stockable</tradeability>
     <techLevel>Neolithic</techLevel>
     <tradeTags>
       <li>Exotic</li>
@@ -83,7 +83,7 @@
       <li>Items</li>
     </thingCategories>
     <drawGUIOverlay>true</drawGUIOverlay>
-	  <tradeability>Sellable</tradeability>
+    <tradeability>Stockable</tradeability>
     <techLevel>Neolithic</techLevel>
     <tradeTags>
       <li>Exotic</li>
@@ -137,7 +137,7 @@
       <li>Items</li>
     </thingCategories>
     <drawGUIOverlay>true</drawGUIOverlay>
-    <tradeability>Sellable</tradeability>
+    <tradeability>Stockable</tradeability>
     <techLevel>Neolithic</techLevel>
     <tradeTags>
       <li>Exotic</li>

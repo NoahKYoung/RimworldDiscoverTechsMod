@@ -7,7 +7,7 @@
     <description>Craft a blueprint.</description>
     <jobString>Crafting blueprint.</jobString>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
+    <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>4000</workAmount>
     <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -27,7 +27,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <TechnologyBlueprint>1</TechnologyBlueprint>
+      <TechnologyBlueprintOld>1</TechnologyBlueprintOld>
     </products>
 		<skillRequirements>
 			<Intellectual>10</Intellectual>
@@ -46,7 +46,7 @@
     <description>Craft a blueprint.</description>
     <jobString>Crafting blueprint.</jobString>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
+    <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>5000</workAmount>
     <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -66,7 +66,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <TechnologyBlueprint>1</TechnologyBlueprint>
+      <TechnologyBlueprintNew>1</TechnologyBlueprintNew>
     </products>
 		<skillRequirements>
 			<Intellectual>12</Intellectual>

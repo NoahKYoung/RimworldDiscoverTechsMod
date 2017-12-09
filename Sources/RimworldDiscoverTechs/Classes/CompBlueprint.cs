@@ -54,6 +54,11 @@ namespace RimworldDiscoverTechs
             }
         }
 
+        public override void PreAbsorbStack(Thing otherStack, int count)
+        {
+            base.PreAbsorbStack(otherStack, count);
+        }
+
         public override void PostExposeData()
         {
             base.PostExposeData();

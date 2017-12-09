@@ -162,16 +162,30 @@
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationReplace">
 		<xpath>*/PawnKindDef[defName="TownGuard"]/inventoryOptions</xpath>
-		<value>
-					<li>
-					  <thingDef>TechnologyBlueprintNew</thingDef>
-					  <countRange>
-						<min>0</min>
-						<max>1</max>
-					  </countRange>
-					</li>
+    <value>
+      <inventoryOptions>
+        <skipChance>0.95</skipChance>
+        <subOptionsChooseOne>
+          <li>
+            <choiceChance>90</choiceChance>
+            <thingDef>Silver</thingDef>
+            <countRange>
+              <min>30</min>
+              <max>100</max>
+            </countRange>
+          </li>
+          <li>
+            <choiceChance>10</choiceChance>
+            <thingDef>TechnologyBlueprintNew</thingDef>
+            <countRange>
+              <min>0</min>
+              <max>1</max>
+            </countRange>
+          </li>
+        </subOptionsChooseOne>
+      </inventoryOptions>
 		</value>
 	</Operation>
 	
@@ -225,7 +239,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/PawnKindDef[defName="Drifter"]/inventoryOptions</xpath>
+		<xpath>*/PawnKindDef[defName="Drifter"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 			<li>
 					  <thingDef>TechnologyBlueprintOld</thingDef>
@@ -238,7 +252,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/PawnKindDef[defName="Scavenger"]/inventoryOptions</xpath>
+		<xpath>*/PawnKindDef[defName="Scavenger"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 		<li>
 					  <thingDef>TechnologyBlueprintOld</thingDef>
@@ -251,7 +265,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/PawnKindDef[defName="Thrasher"]/inventoryOptions</xpath>
+		<xpath>*/PawnKindDef[defName="Thrasher"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 			<li>
 				<thingDef>TechnologyBlueprintNew</thingDef>
@@ -264,7 +278,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/PawnKindDef[defName="Pirate"]/inventoryOptions</xpath>
+		<xpath>*/PawnKindDef[defName="Pirate"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 			<li>
 					  <thingDef>TechnologyBlueprintNew</thingDef>
@@ -295,7 +309,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/PawnKindDef[defName="MercenaryGunner"]/inventoryOptions</xpath>
+		<xpath>*/PawnKindDef[defName="MercenaryGunner"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 					<li>
 					  <thingDef>TechnologyBlueprintNew</thingDef>
@@ -308,7 +322,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/PawnKindDef[defName="MercenarySniper"]/inventoryOptions</xpath>
+		<xpath>*/PawnKindDef[defName="MercenarySniper"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 			<li>
 					  <thingDef>TechnologyBlueprintNew</thingDef>
@@ -321,7 +335,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/PawnKindDef[defName="MercenarySlasher"]/inventoryOptions</xpath>
+		<xpath>*/PawnKindDef[defName="MercenarySlasher"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 			<li>
 					  <thingDef>TechnologyBlueprintNew</thingDef>

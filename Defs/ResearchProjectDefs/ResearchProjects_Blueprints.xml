@@ -31,6 +31,13 @@
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
 			<li>NeolithicBlueprint</li>
+			<li>Beds</li>
+			<li>CarpetMaking</li>
+			<li>Smithing</li>
+			<li>Stonecutting</li>
+			<li>ComplexClothing</li>
+			<li>LongBlades</li>
+			<li>Greatbows</li>
 		</prerequisites>
 		<researchViewX>1</researchViewX>
 		<researchViewY>0</researchViewY>
@@ -46,6 +53,47 @@
 		<prerequisites>
 			<li>NeolithicBlueprint</li>
 			<li>MedievalBlueprint</li>
+			<li>DrugProduction</li>
+			<li>Electricity</li>
+			<li>PsychiteRefining</li>
+			<li>WakeUpProduction</li>
+			<li>GoJuiceProduction</li>
+			<li>PenoxycylineProduction</li>
+			<li>Batteries</li>
+			<li>Refining</li>
+			<li>NutrientPaste</li>
+			<li>SolarPanels</li>
+			<li>AirConditioning</li>
+			<li>Autodoors</li>
+			<li>Hydroponics</li>
+			<li>ElectricSmelting</li>
+			<li>PackagedSurvivalMeal</li>
+			<li>ElectricCremation</li>
+			<li>ColoredLights</li>
+			<li>Machining</li>
+			<li>IEDs</li>
+			<li>IEDIncendiary</li>
+			<li>Mortars</li>
+			<li>Gunsmithing</li>
+			<li>BlowbackOperation</li>
+			<li>GasOperation</li>
+			<li>PrecisionRifling</li>
+			<li>SmokepopBelt</li>
+			<li>MicroelectronicsBasics</li>
+			<li>TubeTelevision</li>
+			<li>GunTurrets</li>
+			<li>Firefoam</li>
+			<li>MoisturePump</li>
+			<li>GeothermalPower</li>
+			<li>TransportPod</li>
+			<li>MedicineProduction</li>
+			<li>MultiAnalyzer</li>
+			<li>LongRangeMineralScanner</li>
+			<li>GroundPenetratingScanner</li>
+			<li>DeepDrilling</li>
+			<li>VitalsMonitor</li>
+			<li>ComponentAssembly</li>
+			<li>MultibarrelWeapons</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<researchViewX>2</researchViewX>
@@ -63,6 +111,16 @@
 			<li>NeolithicBlueprint</li>
 			<li>MedievalBlueprint</li>
 			<li>IndustrialBlueprint</li>
+			<li>Cryptosleep</li>
+			<li>PoweredArmor</li>
+			<li>ShieldBelt</li>
+			<li>ChargedShot</li>
+			<li>ShipBasics</li>
+			<li>ShipCryptosleep</li>
+			<li>ShipReactor</li>
+			<li>ShipEngine</li>
+			<li>ShipComputerCore</li>
+			<li>ShipSensorCluster</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<researchViewX>3</researchViewX>

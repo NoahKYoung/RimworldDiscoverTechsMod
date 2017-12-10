@@ -27,7 +27,46 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <TechnologyBlueprintOld>1</TechnologyBlueprintOld>
+      <TechnologyBlueprintNeolithic>1</TechnologyBlueprintNeolithic>
+    </products>
+		<skillRequirements>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+    <workSkill>Intellectual</workSkill>
+	<recipeUsers>
+		<li>CraftingSpot</li>
+		<li>HiTechResearchBench</li>
+		<li>ComponentAssemblyBench</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>CraftBlueprintMedieval</defName>
+    <label>craft medieval blueprint</label>
+    <description>Craft a blueprint.</description>
+    <jobString>Crafting blueprint.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>4500</workAmount>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TechnologyBlueprintMedieval>1</TechnologyBlueprintMedieval>
     </products>
 		<skillRequirements>
 			<Intellectual>10</Intellectual>
@@ -41,8 +80,8 @@
   </RecipeDef>
   
   <RecipeDef>
-    <defName>CraftBlueprintSpacer</defName>
-    <label>craft spacer blueprint</label>
+    <defName>CraftBlueprintIndustrial</defName>
+    <label>craft industrial blueprint</label>
     <description>Craft a blueprint.</description>
     <jobString>Crafting blueprint.</jobString>
     <workSpeedStat>SmithingSpeed</workSpeedStat>
@@ -66,10 +105,48 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <TechnologyBlueprintNew>1</TechnologyBlueprintNew>
+      <TechnologyBlueprintIndustrial>1</TechnologyBlueprintIndustrial>
     </products>
 		<skillRequirements>
 			<Intellectual>12</Intellectual>
+		</skillRequirements>
+    <workSkill>Intellectual</workSkill>
+	<recipeUsers>
+		<li>HiTechResearchBench</li>
+		<li>ComponentAssemblyBench</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>CraftBlueprintSpacer</defName>
+    <label>craft spacer blueprint</label>
+    <description>Craft a blueprint.</description>
+    <jobString>Crafting blueprint.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>6000</workAmount>
+    <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TechnologyBlueprintSpacer>1</TechnologyBlueprintSpacer>
+    </products>
+		<skillRequirements>
+			<Intellectual>15</Intellectual>
 		</skillRequirements>
     <workSkill>Intellectual</workSkill>
 	<recipeUsers>

@@ -127,7 +127,7 @@
     <tradeNeverStack>true</tradeNeverStack>
     <useHitPoints>true</useHitPoints>
     <statBases>
-      <MarketValue>1000</MarketValue>
+      <MarketValue>1500</MarketValue>
       <MaxHitPoints>80</MaxHitPoints>
       <Mass>0.2</Mass>
       <Flammability>0.9</Flammability>
@@ -181,7 +181,7 @@
     <tradeNeverStack>true</tradeNeverStack>
 	  <useHitPoints>true</useHitPoints>
     <statBases>
-      <MarketValue>1000</MarketValue>
+      <MarketValue>750</MarketValue>
       <MaxHitPoints>80</MaxHitPoints>
       <Mass>0.2</Mass>
 	  <Flammability>0.9</Flammability>
@@ -287,7 +287,7 @@
     <tradeNeverStack>true</tradeNeverStack>
 	  <useHitPoints>true</useHitPoints>
     <statBases>
-      <MarketValue>1000</MarketValue>
+      <MarketValue>1250</MarketValue>
       <MaxHitPoints>80</MaxHitPoints>
       <Mass>0.2</Mass>
 	  <Flammability>0.9</Flammability>
@@ -340,7 +340,7 @@
     <tradeNeverStack>true</tradeNeverStack>
 	  <useHitPoints>true</useHitPoints>
     <statBases>
-      <MarketValue>1000</MarketValue>
+      <MarketValue>1500</MarketValue>
       <MaxHitPoints>80</MaxHitPoints>
       <Mass>0.2</Mass>
 	  <Flammability>0.9</Flammability>

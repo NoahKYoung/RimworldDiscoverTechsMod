@@ -1,170 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="ResourceBase">
-    <defName>TechnologyBlueprint</defName>
-    <label>technology blueprint</label>
-    <thingClass>ThingWithComps</thingClass>
-    <description>blueprint prototype</description>
-    <graphicData>
-      <texPath>Things/Item/Blueprints/Blueprint_Old</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <itemGeneratorTags>
-      <li>SpecialReward</li>
-    </itemGeneratorTags>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>5</stackLimit>
-    <tradeNeverStack>true</tradeNeverStack>
-    <useHitPoints>true</useHitPoints>
-    <statBases>
-      <MarketValue>1000</MarketValue>
-      <MaxHitPoints>80</MaxHitPoints>
-      <Mass>0.2</Mass>
-      <Flammability>0.9</Flammability>
-      <DeteriorationRate>2.0</DeteriorationRate>
-    </statBases>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <tradeability>Stockable</tradeability>
-    <techLevel>Neolithic</techLevel>
-    <tradeTags>
-      <li>Exotic</li>
-    </tradeTags>
-    <comps>
-      <li Class="RimworldDiscoverTechs.CompProperties_BlueprintTech">
-        <compClass>RimworldDiscoverTechs.CompBlueprintTech</compClass>
-        <techLevels>
-          <li>Neolithic</li>
-          <li>Medieval</li>
-          <li>Industrial</li>
-          <li>Spacer</li>
-        </techLevels>
-      </li>
-      <li Class="CompProperties_Usable">
-        <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
-        <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>{0} technology blueprint</useLabel>
-      </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
-      </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_DestroySelf</compClass>
-      </li>
-    </comps>
-  </ThingDef>
-  
-  <ThingDef ParentName="ResourceBase">
-    <defName>TechnologyBlueprintOld</defName>
-    <label>technology blueprint</label>
-    <thingClass>ThingWithComps</thingClass>
-    <description>blueprint prototype</description>
-    <graphicData>
-      <texPath>Things/Item/Blueprints/Blueprint_Old</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	  <itemGeneratorTags>
-      <li>SpecialReward</li>
-    </itemGeneratorTags>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>5</stackLimit>
-    <tradeNeverStack>true</tradeNeverStack>
-	  <useHitPoints>true</useHitPoints>
-    <statBases>
-      <MarketValue>1000</MarketValue>
-      <MaxHitPoints>80</MaxHitPoints>
-      <Mass>0.2</Mass>
-	  <Flammability>0.9</Flammability>
-      <DeteriorationRate>2.0</DeteriorationRate>
-    </statBases>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <tradeability>Stockable</tradeability>
-    <techLevel>Neolithic</techLevel>
-    <tradeTags>
-      <li>Exotic</li>
-    </tradeTags>
-    <comps>
-      <li Class="RimworldDiscoverTechs.CompProperties_BlueprintTech">
-        <compClass>RimworldDiscoverTechs.CompBlueprintTech</compClass>
-        <techLevels>
-          <li>Neolithic</li>
-          <li>Medieval</li>
-        </techLevels>
-      </li>
-      <li Class="CompProperties_Usable">
-        <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
-        <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>{0} technology blueprint</useLabel>
-      </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
-      </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_DestroySelf</compClass>
-      </li>
-    </comps>
-  </ThingDef>
-
-  <ThingDef ParentName="ResourceBase">
-    <defName>TechnologyBlueprintNew</defName>
-    <label>technology blueprint</label>
-    <thingClass>ThingWithComps</thingClass>
-    <description>blueprint prototype</description>
-    <graphicData>
-      <texPath>Things/Item/Blueprints/Blueprint_New</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <itemGeneratorTags>
-      <li>SpecialReward</li>
-    </itemGeneratorTags>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <stackLimit>5</stackLimit>
-    <tradeNeverStack>true</tradeNeverStack>
-    <useHitPoints>true</useHitPoints>
-    <statBases>
-      <MarketValue>1500</MarketValue>
-      <MaxHitPoints>80</MaxHitPoints>
-      <Mass>0.2</Mass>
-      <Flammability>0.9</Flammability>
-      <DeteriorationRate>2.0</DeteriorationRate>
-    </statBases>
-    <thingCategories>
-      <li>Items</li>
-    </thingCategories>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <tradeability>Stockable</tradeability>
-    <techLevel>Neolithic</techLevel>
-    <tradeTags>
-      <li>Exotic</li>
-    </tradeTags>
-    <comps>
-      <li Class="RimworldDiscoverTechs.CompProperties_BlueprintTech">
-        <compClass>RimworldDiscoverTechs.CompBlueprintTech</compClass>
-        <techLevels>
-          <li>Industrial</li>
-          <li>Spacer</li>
-        </techLevels>
-      </li>
-      <li Class="CompProperties_Usable">
-        <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
-        <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>{0} technology blueprint</useLabel>
-      </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
-      </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_DestroySelf</compClass>
-      </li>
-    </comps>
-  </ThingDef>
-  
-  <ThingDef ParentName="ResourceBase">
+    <ThingDef ParentName="ResourceBase">
     <defName>TechnologyBlueprintNeolithic</defName>
     <label>neolithic technology blueprint</label>
     <thingClass>ThingWithComps</thingClass>
@@ -181,14 +17,14 @@
     <tradeNeverStack>true</tradeNeverStack>
 	  <useHitPoints>true</useHitPoints>
     <statBases>
-      <MarketValue>750</MarketValue>
+      <MarketValue>250</MarketValue>
       <MaxHitPoints>80</MaxHitPoints>
       <Mass>0.2</Mass>
 	  <Flammability>0.9</Flammability>
       <DeteriorationRate>2.0</DeteriorationRate>
     </statBases>
     <thingCategories>
-      <li>Items</li>
+      <li>TechnologyBlueprints</li>
     </thingCategories>
     <drawGUIOverlay>true</drawGUIOverlay>
     <tradeability>Stockable</tradeability>
@@ -234,14 +70,14 @@
     <tradeNeverStack>true</tradeNeverStack>
 	  <useHitPoints>true</useHitPoints>
     <statBases>
-      <MarketValue>1000</MarketValue>
+      <MarketValue>500</MarketValue>
       <MaxHitPoints>80</MaxHitPoints>
       <Mass>0.2</Mass>
 	  <Flammability>0.9</Flammability>
       <DeteriorationRate>2.0</DeteriorationRate>
     </statBases>
     <thingCategories>
-      <li>Items</li>
+      <li>TechnologyBlueprints</li>
     </thingCategories>
     <drawGUIOverlay>true</drawGUIOverlay>
     <tradeability>Stockable</tradeability>
@@ -287,14 +123,14 @@
     <tradeNeverStack>true</tradeNeverStack>
 	  <useHitPoints>true</useHitPoints>
     <statBases>
-      <MarketValue>1250</MarketValue>
+      <MarketValue>1000</MarketValue>
       <MaxHitPoints>80</MaxHitPoints>
       <Mass>0.2</Mass>
 	  <Flammability>0.9</Flammability>
       <DeteriorationRate>2.0</DeteriorationRate>
     </statBases>
     <thingCategories>
-      <li>Items</li>
+      <li>TechnologyBlueprints</li>
     </thingCategories>
     <drawGUIOverlay>true</drawGUIOverlay>
     <tradeability>Stockable</tradeability>
@@ -340,14 +176,14 @@
     <tradeNeverStack>true</tradeNeverStack>
 	  <useHitPoints>true</useHitPoints>
     <statBases>
-      <MarketValue>1500</MarketValue>
+      <MarketValue>2000</MarketValue>
       <MaxHitPoints>80</MaxHitPoints>
       <Mass>0.2</Mass>
 	  <Flammability>0.9</Flammability>
       <DeteriorationRate>2.0</DeteriorationRate>
     </statBases>
     <thingCategories>
-      <li>Items</li>
+      <li>TechnologyBlueprints</li>
     </thingCategories>
     <drawGUIOverlay>true</drawGUIOverlay>
     <tradeability>Stockable</tradeability>

@@ -63,6 +63,7 @@
     <Content Include="Defs\ResearchProjectDefs\ResearchProjects_Blueprints.xml" />
     <Content Include="Defs\ResearchProjectDefs\ResearchTabs.xml" />
     <Content Include="Defs\Sites\Cores\ItemStash.xml" />
+    <Content Include="Defs\ThingCategories\ThingCategoryDefs.xml" />
     <Content Include="Defs\ThingDefs_Items\ThingDefs_Blueprints.xml" />
     <Content Include="Defs\WorkGiverDefs\WorkGivers.xml" />
     <Content Include="Patches\Patches.xml" />

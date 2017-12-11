@@ -100,8 +100,8 @@ namespace RimworldDiscoverTechs
 
         public override string TransformLabel(string label)
         {
-            // Item's name with tech level
-            return string.Format(techLevel.ToStringHuman()+" "+label);
+            // Item's label
+            return label;
         }
 
         // allow stacking same types of blueprints & disallows else

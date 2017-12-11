@@ -33,11 +33,10 @@
 			<Intellectual>8</Intellectual>
 		</skillRequirements>
     <workSkill>Intellectual</workSkill>
-	<recipeUsers>
-		<li>CraftingSpot</li>
-		<li>HiTechResearchBench</li>
-		<li>ComponentAssemblyBench</li>
-	</recipeUsers>
+	  <recipeUsers>
+		  <li>CraftingSpot</li>
+		  <li>ComponentAssemblyBench</li>
+	  </recipeUsers>
   </RecipeDef>
   
   <RecipeDef>
@@ -74,7 +73,6 @@
     <workSkill>Intellectual</workSkill>
 	<recipeUsers>
 		<li>CraftingSpot</li>
-		<li>HiTechResearchBench</li>
 		<li>ComponentAssemblyBench</li>
 	</recipeUsers>
   </RecipeDef>
@@ -112,7 +110,6 @@
 		</skillRequirements>
     <workSkill>Intellectual</workSkill>
 	<recipeUsers>
-		<li>HiTechResearchBench</li>
 		<li>ComponentAssemblyBench</li>
 	</recipeUsers>
   </RecipeDef>
@@ -151,7 +148,6 @@
     <workSkill>Intellectual</workSkill>
 	<recipeUsers>
 		<li>ComponentAssemblyBench</li>
-		<li>HiTechResearchBench</li>
 	</recipeUsers>
   </RecipeDef>
 	

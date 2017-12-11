@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>
-	<Operation Class="PatchOperationInsert">
-		<xpath>*/ThingDef[defName="HiTechResearchBench"]/graphicData</xpath>
-		<value>
-			<inspectorTabs>
-				<li>ITab_Bills</li>
-			</inspectorTabs>
-			<building>
-				<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			</building>
-		</value>
-	</Operation>
-	
+<Patch>	
 	<Operation Class="PatchOperationInsert">
 		<xpath>*/PawnKindDef[defName="TribalWarrior"]/apparelTags</xpath>
 		<value>

@@ -8,12 +8,10 @@
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
     <priorityInType>80</priorityInType>
-	<fixedBillGiverDefs>
-	  <li>SimpleResearchBench</li>
-	  <li>HiTechResearchBench</li>
+	  <fixedBillGiverDefs>
+      <li>CraftingSpot</li>
+      <li>ComponentAssemblyBench</li>
     </fixedBillGiverDefs>
-    <billGiversAllHumanlikes>true</billGiversAllHumanlikes>
-    <billGiversAllHumanlikesCorpses>true</billGiversAllHumanlikesCorpses>
     <verb>work at</verb>
     <gerund>working at</gerund>
     <requiredCapacities>

@@ -14,8 +14,8 @@
     </fixedBillGiverDefs>
     <billGiversAllHumanlikes>true</billGiversAllHumanlikes>
     <billGiversAllHumanlikesCorpses>true</billGiversAllHumanlikesCorpses>
-    <verb>operate</verb>
-    <gerund>operating on</gerund>
+    <verb>work at</verb>
+    <gerund>working at</gerund>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>

@@ -45,7 +45,7 @@
       <li Class="CompProperties_Usable">
         <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
         <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>technology blueprint</useLabel>
+        <useLabel>{0} technology blueprint</useLabel>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
@@ -99,7 +99,7 @@
       <li Class="CompProperties_Usable">
         <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
         <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>technology blueprint</useLabel>
+        <useLabel>{0} technology blueprint</useLabel>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
@@ -153,7 +153,7 @@
       <li Class="CompProperties_Usable">
         <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
         <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>technology blueprint</useLabel>
+        <useLabel>{0} technology blueprint</useLabel>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
@@ -206,7 +206,7 @@
       <li Class="CompProperties_Usable">
         <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
         <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>technology blueprint</useLabel>
+        <useLabel>{0} technology blueprint</useLabel>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
@@ -259,7 +259,7 @@
       <li Class="CompProperties_Usable">
         <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
         <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>technology blueprint</useLabel>
+        <useLabel>{0} technology blueprint</useLabel>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
@@ -312,7 +312,7 @@
       <li Class="CompProperties_Usable">
         <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
         <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>technology blueprint</useLabel>
+        <useLabel>{0} technology blueprint</useLabel>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>
@@ -365,7 +365,7 @@
       <li Class="CompProperties_Usable">
         <compClass>RimworldDiscoverTechs.CompBlueprint</compClass>
         <useJob>UseTechnologyBlueprint</useJob>
-        <useLabel>technology blueprint</useLabel>
+        <useLabel>{0} technology blueprint</useLabel>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>RimworldDiscoverTechs.CompUseEffect_UnlockTechnology</compClass>

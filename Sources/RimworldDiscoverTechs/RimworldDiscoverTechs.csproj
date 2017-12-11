@@ -57,13 +57,15 @@
   <ItemGroup>
     <Content Include="About\About.xml" />
     <Content Include="About\Preview.png" />
+    <Content Include="Defs\ItemCollectionGeneratorDefs\ItemCollectionGenerators_General.xml" />
     <Content Include="Defs\Job_Defs\Job_Defs.xml" />
     <Content Include="Defs\Recipes\Recipes_Blueprint.xml" />
+    <Content Include="Defs\ResearchProjectDefs\ResearchProjects_Blueprints.xml" />
+    <Content Include="Defs\ResearchProjectDefs\ResearchTabs.xml" />
+    <Content Include="Defs\Sites\Cores\ItemStash.xml" />
     <Content Include="Defs\ThingDefs_Items\ThingDefs_Blueprints.xml" />
     <Content Include="Defs\WorkGiverDefs\WorkGivers.xml" />
-    <Content Include="Patches\Patches.xml">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Patches\Patches.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

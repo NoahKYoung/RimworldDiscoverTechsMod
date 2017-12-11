@@ -18,7 +18,7 @@ namespace RimworldDiscoverTechs
         {
             get
             {
-                return string.Format(techLevel.ToStringHuman() + " " + Props.useLabel); // This is what is shown on tooltip menu
+                return string.Format(Props.useLabel, techLevel.ToStringHuman()); // This is what is shown on tooltip menu
             }
         }
 

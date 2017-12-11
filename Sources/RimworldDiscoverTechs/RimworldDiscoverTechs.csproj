@@ -61,9 +61,7 @@
     <Content Include="Defs\Recipes\Recipes_Blueprint.xml" />
     <Content Include="Defs\ThingDefs_Items\ThingDefs_Blueprints.xml" />
     <Content Include="Defs\WorkGiverDefs\WorkGivers.xml" />
-    <Content Include="Patches\Patches.xml">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Patches\Patches.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

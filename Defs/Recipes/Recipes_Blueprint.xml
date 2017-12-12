@@ -37,6 +37,7 @@
 		<li>CraftingSpot</li>
 		<li>ComponentAssemblyBench</li>
 	</recipeUsers>
+	<researchPrerequisite>NeolithicBlueprint</researchPrerequisite>
   </RecipeDef>
   
   <RecipeDef>
@@ -75,6 +76,7 @@
 		<li>CraftingSpot</li>
 		<li>ComponentAssemblyBench</li>
 	</recipeUsers>
+	<researchPrerequisite>MedievalBlueprint</researchPrerequisite>
   </RecipeDef>
   
   <RecipeDef>
@@ -96,10 +98,19 @@
         </filter>
         <count>25</count>
       </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Component</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Cloth</li>
+		<li>Component</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -112,6 +123,7 @@
 	<recipeUsers>
 		<li>ComponentAssemblyBench</li>
 	</recipeUsers>
+	<researchPrerequisite>IndustrialBlueprint</researchPrerequisite>
   </RecipeDef>
   
   <RecipeDef>
@@ -133,10 +145,19 @@
         </filter>
         <count>25</count>
       </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>AdvancedComponent</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Cloth</li>
+		<li>AdvancedComponent</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -149,6 +170,7 @@
 	<recipeUsers>
 		<li>ComponentAssemblyBench</li>
 	</recipeUsers>
+	<researchPrerequisite>SpacerBlueprint</researchPrerequisite>
   </RecipeDef>
 	
 </Defs>

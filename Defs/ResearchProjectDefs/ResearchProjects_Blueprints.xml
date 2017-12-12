@@ -5,7 +5,7 @@
 	<ResearchProjectDef>
 		<defName>NeolithicBlueprint</defName>
 		<label>Neolithic Blueprint</label>
-		<description>The primal butchering for organs, often used in rituals. However quite barbaric. You can perform basic Blueprint through the butchering table.</description>
+		<description>Craft a neolithic technology blueprint. To be able to craft a neolithic blueprint you need to have a good understanding of the technology in the neolithic tech era.</description>
 		<baseCost>500</baseCost>
 		<tab>Blueprints</tab>
 		<techLevel>Neolithic</techLevel>
@@ -25,7 +25,7 @@
 	<ResearchProjectDef>
 		<defName>MedievalBlueprint</defName>
 		<label>Medieval Blueprint</label>
-		<description>Skilled medical skills allows for humane organ extraction. People won't be disgusted by it. This research unlocks the Blueprint table.</description>
+		<description>Craft a medieval technology blueprint. To be able to craft a medieval blueprint you need to have a good understanding of the technology in the medieval and previous tech era.</description>
 		<baseCost>2000</baseCost>
 		<tab>Blueprints</tab>
 		<techLevel>Medieval</techLevel>
@@ -46,7 +46,7 @@
 	<ResearchProjectDef>
 		<defName>IndustrialBlueprint</defName>
 		<label>Industrial Blueprint</label>
-		<description>With the right tools, training and technology, you can perserve human organs with the same success chance as in the core planets.</description>
+		<description>Craft a industrial technology blueprint. To be able to craft a industrial blueprint you need to have a good understanding of the technology in the industrial and previous tech era.</description>
 		<baseCost>4000</baseCost>
 		<tab>Blueprints</tab>
 		<techLevel>Industrial</techLevel>
@@ -103,7 +103,7 @@
 	<ResearchProjectDef>
 		<defName>SpacerBlueprint</defName>
 		<label>Spacer Blueprint</label>
-		<description>With the right tools, training and technology, you can perserve human organs with the same success chance as in the core planets.</description>
+		<description>Craft a spacer technology blueprint. To be able to craft a spacer blueprint you need to have a good understanding of all known technology.</description>
 		<baseCost>8000</baseCost>
 		<tab>Blueprints</tab>
 		<techLevel>Spacer</techLevel>

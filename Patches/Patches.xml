@@ -57,6 +57,7 @@
 				<skipChance>0.95</skipChance>
 				<subOptionsChooseOne>
           <li>
+		  <choiceChance>60</choiceChance>
             <thingDef>TechnologyBlueprintNeolithic</thingDef>
             <countRange>
               <min>0</min>
@@ -64,6 +65,7 @@
             </countRange>
           </li>
           <li>
+		  <choiceChance>30</choiceChance>
             <thingDef>TechnologyBlueprintMedieval</thingDef>
             <countRange>
               <min>0</min>
@@ -71,6 +73,7 @@
             </countRange>
           </li>
           <li>
+		  <choiceChance>7</choiceChance>
             <thingDef>TechnologyBlueprintIndustrial</thingDef>
             <countRange>
               <min>0</min>
@@ -78,6 +81,7 @@
             </countRange>
           </li>
           <li>
+		  <choiceChance>3</choiceChance>
             <thingDef>TechnologyBlueprintSpacer</thingDef>
             <countRange>
               <min>0</min>
@@ -96,6 +100,7 @@
 				<skipChance>0.95</skipChance>
 				<subOptionsChooseOne>
           <li>
+		  <choiceChance>60</choiceChance>
             <thingDef>TechnologyBlueprintNeolithic</thingDef>
             <countRange>
               <min>0</min>
@@ -103,6 +108,7 @@
             </countRange>
           </li>
           <li>
+		  <choiceChance>30</choiceChance>
             <thingDef>TechnologyBlueprintMedieval</thingDef>
             <countRange>
               <min>0</min>
@@ -110,6 +116,7 @@
             </countRange>
           </li>
           <li>
+		  <choiceChance>7</choiceChance>
             <thingDef>TechnologyBlueprintIndustrial</thingDef>
             <countRange>
               <min>0</min>
@@ -117,6 +124,7 @@
             </countRange>
           </li>
           <li>
+		  <choiceChance>3</choiceChance>
             <thingDef>TechnologyBlueprintSpacer</thingDef>
             <countRange>
               <min>0</min>
@@ -135,6 +143,7 @@
 				<skipChance>0.95</skipChance>
 				<subOptionsChooseOne>
           <li>
+		  <choiceChance>60</choiceChance>
             <thingDef>TechnologyBlueprintNeolithic</thingDef>
             <countRange>
               <min>0</min>
@@ -142,6 +151,7 @@
             </countRange>
           </li>
           <li>
+		  <choiceChance>40</choiceChance>
             <thingDef>TechnologyBlueprintMedieval</thingDef>
             <countRange>
               <min>0</min>
@@ -236,7 +246,7 @@
             </countRange>
           </li>
           <li>
-            <choiceChance>10</choiceChance>
+            <choiceChance>7</choiceChance>
             <thingDef>TechnologyBlueprintIndustrial</thingDef>
             <countRange>
               <min>0</min>
@@ -244,7 +254,7 @@
             </countRange>
           </li>
           <li>
-            <choiceChance>10</choiceChance>
+            <choiceChance>3</choiceChance>
             <thingDef>TechnologyBlueprintSpacer</thingDef>
             <countRange>
               <min>0</min>
@@ -284,12 +294,12 @@
 		<xpath>*/PawnKindDef[defName="SpaceSoldier"]/apparelTags</xpath>
 		<value>
 			<inventoryOptions>
-				<skipChance>0.1</skipChance>
+				<skipChance>0.5</skipChance>
 				<subOptionsChooseOne>
 					<li>
 					  <thingDef>TechnologyBlueprintIndustrial</thingDef>
 					  <countRange>
-						<min>1</min>
+						<min>0</min>
 						<max>2</max>
 					  </countRange>
 					</li>
@@ -309,12 +319,12 @@
 		<xpath>*/PawnKindDef[defName="SpaceRefugee"]/apparelTags</xpath>
 		<value>
 			<inventoryOptions>
-				<skipChance>0.2</skipChance>
+				<skipChance>0.6</skipChance>
 				<subOptionsChooseOne>
 					<li>
 					  <thingDef>TechnologyBlueprintIndustrial</thingDef>
 					  <countRange>
-						<min>1</min>
+						<min>0</min>
 						<max>1</max>
 					  </countRange>
 					</li>
@@ -334,6 +344,7 @@
 		<xpath>*/PawnKindDef[defName="Drifter"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 			<li>
+					<choiceChance>10</choiceChance>
 					  <thingDef>TechnologyBlueprintNeolithic</thingDef>
 					  <countRange>
 						<min>0</min>
@@ -341,6 +352,7 @@
 					  </countRange>
 					</li>
       <li>
+		<choiceChance>10</choiceChance>
         <thingDef>TechnologyBlueprintMedieval</thingDef>
         <countRange>
           <min>0</min>
@@ -354,6 +366,7 @@
 		<xpath>*/PawnKindDef[defName="Scavenger"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 		<li>
+		<choiceChance>10</choiceChance>
 					  <thingDef>TechnologyBlueprintNeolithic</thingDef>
 					  <countRange>
 						<min>0</min>
@@ -361,6 +374,7 @@
 					  </countRange>
 					</li>
       <li>
+	  <choiceChance>10</choiceChance>
         <thingDef>TechnologyBlueprintMedieval</thingDef>
         <countRange>
           <min>0</min>
@@ -374,6 +388,7 @@
 		<xpath>*/PawnKindDef[defName="Thrasher"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 			<li>
+			<choiceChance>10</choiceChance>
 				<thingDef>TechnologyBlueprintIndustrial</thingDef>
 					<countRange>
 						<min>0</min>
@@ -381,6 +396,7 @@
 					</countRange>
 			</li>
       <li>
+	  <choiceChance>5</choiceChance>
         <thingDef>TechnologyBlueprintSpacer</thingDef>
         <countRange>
           <min>0</min>
@@ -394,6 +410,7 @@
 		<xpath>*/PawnKindDef[defName="Pirate"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 			<li>
+			<choiceChance>10</choiceChance>
 					  <thingDef>TechnologyBlueprintIndustrial</thingDef>
 					  <countRange>
 						<min>0</min>
@@ -401,6 +418,7 @@
 					  </countRange>
 					</li>
       <li>
+	  <choiceChance>8</choiceChance>
         <thingDef>TechnologyBlueprintSpacer</thingDef>
         <countRange>
           <min>0</min>
@@ -439,6 +457,7 @@
 		<xpath>*/PawnKindDef[defName="MercenaryGunner"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 					<li>
+					<choiceChance>10</choiceChance>
 					  <thingDef>TechnologyBlueprintIndustrial</thingDef>
 					  <countRange>
 						<min>0</min>
@@ -446,6 +465,7 @@
 					  </countRange>
 					</li>
       <li>
+	  <choiceChance>5</choiceChance>
         <thingDef>TechnologyBlueprintSpacer</thingDef>
         <countRange>
           <min>0</min>
@@ -459,6 +479,7 @@
 		<xpath>*/PawnKindDef[defName="MercenarySniper"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 			<li>
+			<choiceChance>10</choiceChance>
 					  <thingDef>TechnologyBlueprintIndustrial</thingDef>
 					  <countRange>
 						<min>0</min>
@@ -466,6 +487,7 @@
 					  </countRange>
 					</li>
       <li>
+	  <choiceChance>5</choiceChance>
         <thingDef>TechnologyBlueprintSpacer</thingDef>
         <countRange>
           <min>0</min>
@@ -479,6 +501,7 @@
 		<xpath>*/PawnKindDef[defName="MercenarySlasher"]/inventoryOptions/subOptionsChooseOne</xpath>
 		<value>
 			<li>
+			<choiceChance>10</choiceChance>
 					  <thingDef>TechnologyBlueprintIndustrial</thingDef>
 					  <countRange>
 						<min>0</min>
@@ -486,6 +509,7 @@
 					  </countRange>
 					</li>
       <li>
+	  <choiceChance>5</choiceChance>
         <thingDef>TechnologyBlueprintSpacer</thingDef>
         <countRange>
           <min>0</min>
@@ -502,6 +526,7 @@
 				<skipChance>0.95</skipChance>
 				<subOptionsChooseOne>
 					<li>
+					<choiceChance>10</choiceChance>
 					  <thingDef>TechnologyBlueprintIndustrial</thingDef>
 					  <countRange>
 						<min>0</min>
@@ -509,6 +534,7 @@
 					  </countRange>
 					</li>
           <li>
+		  <choiceChance>8</choiceChance>
             <thingDef>TechnologyBlueprintSpacer</thingDef>
             <countRange>
               <min>0</min>
@@ -527,6 +553,7 @@
 				<skipChance>0.4</skipChance>
 				<subOptionsChooseOne>
 					<li>
+					<choiceChance>20</choiceChance>
 					  <thingDef>TechnologyBlueprintIndustrial</thingDef>
 					  <countRange>
 						<min>1</min>
@@ -534,6 +561,7 @@
 					  </countRange>
 					</li>
           <li>
+		  <choiceChance>10</choiceChance>
             <thingDef>TechnologyBlueprintSpacer</thingDef>
             <countRange>
               <min>1</min>
@@ -629,7 +657,7 @@
         <price>Expensive</price>
         <countRange>
           <min>0</min>
-          <max>2</max>
+          <max>1</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -652,7 +680,7 @@
         <thingDef>TechnologyBlueprintSpacer</thingDef>
         <price>Expensive</price>
         <countRange>
-          <min>1</min>
+          <min>0</min>
           <max>2</max>
         </countRange>
       </li>
@@ -674,7 +702,7 @@
         <thingDef>TechnologyBlueprintMedieval</thingDef>
         <price>Expensive</price>
         <countRange>
-          <min>2</min>
+          <min>1</min>
           <max>4</max>
         </countRange>
       </li>

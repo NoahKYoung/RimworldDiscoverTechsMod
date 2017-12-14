@@ -6,7 +6,7 @@
     <defName>DoBillsCraftBlueprint</defName>
     <label>craft blueprint</label>
     <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Crafting</workType>
+    <workType>Research</workType>
     <priorityInType>80</priorityInType>
 	  <fixedBillGiverDefs>
       <li>CraftingSpot</li>

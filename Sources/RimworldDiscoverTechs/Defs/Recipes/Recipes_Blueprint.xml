@@ -6,9 +6,9 @@
     <label>craft neolithic blueprint</label>
     <description>Craft a blueprint.</description>
     <jobString>Crafting blueprint.</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <effectWorking>MakingBlueprint</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
     <workAmount>4000</workAmount>
     <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     <ingredients>
@@ -34,8 +34,7 @@
 		</skillRequirements>
     <workSkill>Intellectual</workSkill>
 	<recipeUsers>
-		<li>CraftingSpot</li>
-		<li>ComponentAssemblyBench</li>
+		<li>BlueprintBench</li>
 	</recipeUsers>
 	<researchPrerequisite>NeolithicBlueprint</researchPrerequisite>
   </RecipeDef>
@@ -45,9 +44,9 @@
     <label>craft medieval blueprint</label>
     <description>Craft a blueprint.</description>
     <jobString>Crafting blueprint.</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <effectWorking>MakingBlueprint</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
     <workAmount>4500</workAmount>
     <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     <ingredients>
@@ -73,8 +72,7 @@
 		</skillRequirements>
     <workSkill>Intellectual</workSkill>
 	<recipeUsers>
-		<li>CraftingSpot</li>
-		<li>ComponentAssemblyBench</li>
+		<li>BlueprintBench</li>
 	</recipeUsers>
 	<researchPrerequisite>MedievalBlueprint</researchPrerequisite>
   </RecipeDef>
@@ -84,9 +82,9 @@
     <label>craft industrial blueprint</label>
     <description>Craft a blueprint.</description>
     <jobString>Crafting blueprint.</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <effectWorking>MakingBlueprint</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
     <workAmount>5000</workAmount>
     <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     <ingredients>
@@ -120,9 +118,9 @@
 			<Intellectual>12</Intellectual>
 		</skillRequirements>
     <workSkill>Intellectual</workSkill>
-	<recipeUsers>
-		<li>ComponentAssemblyBench</li>
-	</recipeUsers>
+    <recipeUsers>
+      <li>BlueprintBench</li>
+    </recipeUsers>
 	<researchPrerequisite>IndustrialBlueprint</researchPrerequisite>
   </RecipeDef>
   
@@ -131,9 +129,9 @@
     <label>craft spacer blueprint</label>
     <description>Craft a blueprint.</description>
     <jobString>Crafting blueprint.</jobString>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <effectWorking>MakingBlueprint</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
     <workAmount>6000</workAmount>
     <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     <ingredients>
@@ -145,7 +143,7 @@
         </filter>
         <count>25</count>
       </li>
-	  <li>
+	    <li>
         <filter>
           <thingDefs>
             <li>AdvancedComponent</li>
@@ -157,7 +155,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Cloth</li>
-		<li>AdvancedComponent</li>
+		    <li>AdvancedComponent</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -167,9 +165,9 @@
 			<Intellectual>15</Intellectual>
 		</skillRequirements>
     <workSkill>Intellectual</workSkill>
-	<recipeUsers>
-		<li>ComponentAssemblyBench</li>
-	</recipeUsers>
+    <recipeUsers>
+      <li>BlueprintBench</li>
+    </recipeUsers>
 	<researchPrerequisite>SpacerBlueprint</researchPrerequisite>
   </RecipeDef>
 	

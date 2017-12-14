@@ -7,13 +7,12 @@
     <label>craft blueprint</label>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Research</workType>
-    <priorityInType>80</priorityInType>
+    <priorityInType>100</priorityInType>
 	  <fixedBillGiverDefs>
-      <li>CraftingSpot</li>
-      <li>ComponentAssemblyBench</li>
+      <li>BlueprintBench</li>
     </fixedBillGiverDefs>
-    <verb>work at</verb>
-    <gerund>working at</gerund>
+    <verb>craft blueprints at</verb>
+    <gerund>crafting blueprints at</gerund>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>

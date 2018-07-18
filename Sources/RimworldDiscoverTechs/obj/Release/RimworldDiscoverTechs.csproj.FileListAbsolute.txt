@@ -1,0 +1,5 @@
+C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\bin\Release\RimworldDiscoverTechs.dll
+C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\bin\Release\RimworldDiscoverTechs.pdb
+C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\obj\Release\RimworldDiscoverTechs.csproj.CoreCompileInputs.cache
+C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\obj\Release\RimworldDiscoverTechs.dll
+C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\obj\Release\RimworldDiscoverTechs.pdb

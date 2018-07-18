@@ -69,9 +69,54 @@
     <Content Include="Defs\ThingDefs_Items\ThingDefs_Blueprints.xml" />
     <Content Include="Defs\WorkGiverDefs\WorkGivers.xml" />
     <Content Include="Patches\Patches.xml" />
+    <Content Include="Textures\Things\Building\Production\BlueprintBench_back.png" />
+    <Content Include="Textures\Things\Building\Production\BlueprintBench_backm.png" />
+    <Content Include="Textures\Things\Building\Production\BlueprintBench_side.png" />
+    <Content Include="Textures\Things\Building\Production\BlueprintBench_sidem.png" />
+    <Content Include="Textures\Things\Item\Blueprints\Blueprint_New.png" />
+    <Content Include="Textures\Things\Item\Blueprints\Blueprint_Old.png" />
+    <Content Include="Textures\Things\Item\Blueprints\Blueprint_Placeholder.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo ========== Setting path variables. ==========
+set GithubDir=$(TargetDir)..\
+echo ------ GitHub mod root directory: ------
+echo %25GithubDir%25
+set GithubReleaseDir=%25GithubDir%25RELEASE\TechnologyBlueprints
+echo ------ GitHub mod release directory: ------
+echo %25GithubReleaseDir%25
+set RimWorldDir=\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TechnologyBlueprints
+echo ------ RimWorld mod directory: ------
+echo %25RimWorldDir%25
+echo ========== Done setting path variables. ==========
+echo ========== Checking folders for GitHub mod root directory. ==========
+echo ------ Checking "About" folder ------
+xcopy /d  /s /e /y "$(ProjectDir)About" "%25GithubDir%25About"
+echo ------ Checking "Defs" folder ------
+xcopy /d  /s /e /y "$(ProjectDir)Defs" "%25GithubDir%25Defs"
+echo ------ Checking "Patches" folder ------
+xcopy /d  /s /e /y "$(ProjectDir)Patches" "%25GithubDir%25Patches"
+echo ------ Checking "Textures" folder ------
+xcopy /d  /s /e /y "$(ProjectDir)Textures" "%25GithubDir%25Textures"
+echo ========== Done checking folders for GitHub mod root directory. =======
+echo ========== Checking folders for GitHub release directory. ==========
+echo ------ Checking "About" folder ------
+xcopy /d  /s /e /y "%25GithubDir%25About" "%25GithubReleaseDir%25\About"
+echo ------ Checking "Assemblies" folder ------
+xcopy /d  /s /e /y "%25GithubDir%25Assemblies" "%25GithubReleaseDir%25\Assemblies"
+echo ------ Checking "Defs" folder ------
+xcopy /d  /s /e /y "%25GithubDir%25Defs" "%25GithubReleaseDir%25\Defs"
+echo ------ Checking "Patches" folder ------
+xcopy /d  /s /e /y "%25GithubDir%25Patches" "%25GithubReleaseDir%25\Patches"
+echo ------ Checking "Textures" folder ------
+xcopy /d  /s /e /y "%25GithubDir%25Textures" "%25GithubReleaseDir%25\Textures"
+echo ========== Done checking folders for GitHub release directory. ==========
+echo ========== Copying release directory to RimWorld mod directory. ==========
+xcopy /d /s /e /y "%25GithubReleaseDir%25" "\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TechnologyBlueprints"
+echo ========== Copied release directory to RimWorld mod directory. ==========</PostBuildEvent>
+  </PropertyGroup>
 </Project>

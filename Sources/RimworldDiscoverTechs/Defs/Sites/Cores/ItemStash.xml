@@ -18,9 +18,12 @@
         <li>RawResources</li>
         <li>Apparel</li>
         <li>Weapons</li>
-		<li>TechnologyBlueprint</li>
+		    <li>TechnologyBlueprint</li>
       </itemCollectionGeneratorDefs>
-      <totalValueRange><min>2500</min><max>3200</max></totalValueRange> <!-- may be overwritten by IncidentWorker_QuestItemStash -->
+      <totalValueRange> <!-- may be overwritten by IncidentWorker_QuestItemStash -->
+          <min>2500</min>
+          <max>3200</max>
+      </totalValueRange> 
       <count>1</count>
       <nearMapCenter>true</nearMapCenter>
     </genStep>

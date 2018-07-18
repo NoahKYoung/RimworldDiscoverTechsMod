@@ -19,8 +19,8 @@ Please send any feedback or suggestion our way!
 
 
 **Mod compatibility:**
-This should be compatible with all mods.
-However, if you do encounter any compatibility problems, do tell us so we can look into it and list it here.
+The blueprints will also unlock technology from other mods, and can be very useful if you utilize several mods that have their own research.
+This should be compatible with all mods. However, we've had feedback that it does not work with Combat Extended and we will look into this in a further mod update.
 
 
 **Known bugs:**

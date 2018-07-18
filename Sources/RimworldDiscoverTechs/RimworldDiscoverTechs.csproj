@@ -93,6 +93,9 @@ set RimWorldDir=\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Techno
 echo ------ RimWorld mod directory: ------
 echo %25RimWorldDir%25
 echo ========== Done setting path variables. ==========
+echo ========== Copying README to Github mod root directory. ==========
+xcopy /d /y "$(ProjectDir)README.md" "%25GithubDir%25\README.md"
+echo ========== Copied README to Github mod root directory. ==========
 echo ========== Checking folders for GitHub mod root directory. ==========
 echo ------ Checking "About" folder ------
 xcopy /d  /s /e /y "$(ProjectDir)About" "%25GithubDir%25About"

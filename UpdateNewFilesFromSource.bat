@@ -5,7 +5,7 @@ ECHO ========== Setting path variables. ==========
 SET ProjectDir=..\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\
 ECHO ------ GitHub mod root directory: ------
 ECHO %ProjectDir%
-SET GithubDir=..\RimworldDiscoverTechsMod
+SET GithubDir=..\RimworldDiscoverTechsMod\
 ECHO ------ GitHub mod root directory: ------
 ECHO %GithubDir%
 SET GithubReleaseDir=%GithubDir%RELEASE\TechnologyBlueprints
@@ -18,38 +18,38 @@ ECHO ========== Done setting path variables. ==========
 PAUSE
 CLS
 ECHO ========== Copying README to Github mod root directory. ==========
-XCOPY /d /y "%ProjectDir%README.md" "%GithubDir%\README.md"
+XCOPY "%ProjectDir%README.md" "%GithubDir%\README.md" /D /Y
 ECHO ========== Copied README to Github mod root directory. ==========
 PAUSE
 CLS
 ECHO ========== Checking folders for GitHub mod root directory. ==========
 ECHO ------ Checking "About" folder ------
-XCOPY /d  /s /e /y "%ProjectDir%About" "%GithubDir%About"
+XCOPY "%ProjectDir%About" "%GithubDir%About" /D /S /E /Y
 ECHO ------ Checking "Defs" folder ------
-XCOPY /d  /s /e /y "%ProjectDir%Defs" "%GithubDir%Defs"
+XCOPY "%ProjectDir%Defs" "%GithubDir%Defs" /D /S /E /Y
 ECHO ------ Checking "Patches" folder ------
-XCOPY /d  /s /e /y "%ProjectDir%Patches" "%GithubDir%Patches"
+XCOPY "%ProjectDir%Patches" "%GithubDir%Patches" /D /S /E /Y
 ECHO ------ Checking "Textures" folder ------
-XCOPY /d  /s /e /y "%ProjectDir%Textures" "%GithubDir%Textures"
+XCOPY "%ProjectDir%Textures" "%GithubDir%Textures" /D /S /E /Y
 ECHO ========== Done checking folders for GitHub mod root directory. =======
 PAUSE
 CLS
 ECHO ========== Checking folders for GitHub release directory. ==========
 ECHO ------ Checking "About" folder ------
-XCOPY /d  /s /e /y "%GithubDir%About" "%GithubReleaseDir%\About"
+XCOPY "%GithubDir%About" "%GithubReleaseDir%\About" /D /S /E /Y
 ECHO ------ Checking "Assemblies" folder ------
-XCOPY /d  /s /e /y "%GithubDir%Assemblies" "%GithubReleaseDir%\Assemblies"
+XCOPY "%GithubDir%Assemblies" "%GithubReleaseDir%\Assemblies" /D /S /E /Y
 ECHO ------ Checking "Defs" folder ------
-XCOPY /d  /s /e /y "%GithubDir%Defs" "%GithubReleaseDir%\Defs"
+XCOPY "%GithubDir%Defs" "%GithubReleaseDir%\Defs" /D /S /E /Y
 ECHO ------ Checking "Patches" folder ------
-XCOPY /d  /s /e /y "%GithubDir%Patches" "%GithubReleaseDir%\Patches"
+XCOPY "%GithubDir%Patches" "%GithubReleaseDir%\Patches" /D /S /E /Y
 ECHO ------ Checking "Textures" folder ------
-XCOPY /d  /s /e /y "%GithubDir%Textures" "%GithubReleaseDir%\Textures"
+XCOPY "%GithubDir%Textures" "%GithubReleaseDir%\Textures" /D /S /E /Y
 ECHO ========== Done checking folders for GitHub release directory. ==========
 PAUSE
 CLS
 ECHO ========== Copying release directory to RimWorld mod directory. ==========
-XCOPY /d /s /e /y "%GithubReleaseDir%" "\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TechnologyBlueprints"
+XCOPY "%GithubReleaseDir%" "\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\TechnologyBlueprints" /D /S /E /Y
 ECHO ========== Copied release directory to RimWorld mod directory. ==========
 PAUSE
 CLS

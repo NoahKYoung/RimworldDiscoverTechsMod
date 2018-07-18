@@ -9,7 +9,7 @@
     <workSpeedStat>ResearchSpeed</workSpeedStat>
     <effectWorking>MakingBlueprint</effectWorking>
     <soundWorking>Recipe_Tailor</soundWorking>
-    <workAmount>4000</workAmount>
+    <workAmount>10000</workAmount>
     <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     <ingredients>
       <li>
@@ -47,7 +47,7 @@
     <workSpeedStat>ResearchSpeed</workSpeedStat>
     <effectWorking>MakingBlueprint</effectWorking>
     <soundWorking>Recipe_Tailor</soundWorking>
-    <workAmount>4500</workAmount>
+    <workAmount>20000</workAmount>
     <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     <ingredients>
       <li>
@@ -85,7 +85,7 @@
     <workSpeedStat>ResearchSpeed</workSpeedStat>
     <effectWorking>MakingBlueprint</effectWorking>
     <soundWorking>Recipe_Tailor</soundWorking>
-    <workAmount>5000</workAmount>
+    <workAmount>40000</workAmount>
     <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     <ingredients>
       <li>
@@ -132,7 +132,7 @@
     <workSpeedStat>ResearchSpeed</workSpeedStat>
     <effectWorking>MakingBlueprint</effectWorking>
     <soundWorking>Recipe_Tailor</soundWorking>
-    <workAmount>6000</workAmount>
+    <workAmount>80000</workAmount>
     <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     <ingredients>
       <li>

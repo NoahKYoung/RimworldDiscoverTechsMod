@@ -21,18 +21,28 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>RefAssembliesHugsLib\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>RefAssembliesHugsLib\HugsLib.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -47,16 +57,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\RimworldDiscoverTechsClass.cs" />
     <Compile Include="Classes\CompBlueprintTech.cs" />
     <Compile Include="Classes\CompProperties_BlueprintTech.cs" />
     <Compile Include="Classes\CompUseEffect_UnlockTechnology.cs" />
     <Compile Include="Classes\CompBlueprint.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="About\About.xml" />
     <Content Include="About\Preview.png" />
+    <Content Include="bin\Release\RimworldDiscoverTechs.dll" />
+    <Content Include="bin\Release\RimworldDiscoverTechs.pdb" />
     <Content Include="Defs\EffecterDefs\EffecterDefs.xml" />
     <Content Include="Defs\ItemCollectionGeneratorDefs\ItemCollectionGenerators_General.xml" />
     <Content Include="Defs\Job_Defs\Job_Defs.xml" />
@@ -68,6 +93,11 @@
     <Content Include="Defs\ThingDefs_Buildings\ThingDefs_Buildings.xml" />
     <Content Include="Defs\ThingDefs_Items\ThingDefs_Blueprints.xml" />
     <Content Include="Defs\WorkGiverDefs\WorkGivers.xml" />
+    <Content Include="obj\Debug\RimworldDiscoverTechs.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\RimworldDiscoverTechs.dll" />
+    <Content Include="obj\Release\RimworldDiscoverTechs.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\RimworldDiscoverTechs.dll" />
+    <Content Include="obj\Release\RimworldDiscoverTechs.pdb" />
     <Content Include="Patches\Patches.xml" />
     <Content Include="Textures\Things\Building\Production\BlueprintBench_back.png" />
     <Content Include="Textures\Things\Building\Production\BlueprintBench_backm.png" />
@@ -76,9 +106,34 @@
     <Content Include="Textures\Things\Item\Blueprints\Blueprint_New.png" />
     <Content Include="Textures\Things\Item\Blueprints\Blueprint_Old.png" />
     <Content Include="Textures\Things\Item\Blueprints\Blueprint_Placeholder.png" />
+    <Content Include="TextureWork\BlueprintBench_back.png" />
+    <Content Include="TextureWork\BlueprintBench_backm.png" />
+    <Content Include="TextureWork\BlueprintBench_side.png" />
+    <Content Include="TextureWork\BlueprintBench_sidem.png" />
+    <Content Include="TextureWork\CraftingBlueprints.png" />
+    <Content Include="TextureWork\FindingBlueprints.png" />
+    <Content Include="TextureWork\ResearchBenchSimple_back.tex.png" />
+    <Content Include="TextureWork\ResearchBenchSimple_backm.tex.png" />
+    <Content Include="TextureWork\ResearchBenchSimple_side.tex.png" />
+    <Content Include="TextureWork\ResearchBenchSimple_sidem.tex.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Design\Balancing.xlsx" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\RimworldDiscoverTechs.csproj.CopyComplete" />
+    <None Include="obj\Debug\RimworldDiscoverTechs.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\RimworldDiscoverTechs.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\RimworldDiscoverTechs.csproj.CoreCompileInputs.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="README.md" />
+    <None Include="TextureWork\BlueprintBench.xcf" />
+    <None Include="TextureWork\WorkshopImages.xcf" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

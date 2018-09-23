@@ -99,7 +99,7 @@
 	  <li>
         <filter>
           <thingDefs>
-            <li>Component</li>
+            <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -108,7 +108,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Cloth</li>
-		<li>Component</li>
+		<li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -146,7 +146,7 @@
 	    <li>
         <filter>
           <thingDefs>
-            <li>AdvancedComponent</li>
+            <li>ComponentSpacer</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -155,7 +155,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Cloth</li>
-		    <li>AdvancedComponent</li>
+		    <li>ComponentSpacer</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

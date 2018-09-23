@@ -9,9 +9,6 @@
       <texPath>Things/Item/Blueprints/Blueprint_Old</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	  <itemGeneratorTags>
-      <li>SpecialReward</li>
-    </itemGeneratorTags>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <stackLimit>5</stackLimit>
     <tradeNeverStack>true</tradeNeverStack>
@@ -27,7 +24,7 @@
       <li>TechnologyBlueprints</li>
     </thingCategories>
     <drawGUIOverlay>true</drawGUIOverlay>
-    <tradeability>Stockable</tradeability>
+    <tradeability>All</tradeability>
     <techLevel>Neolithic</techLevel>
     <tradeTags>
       <li>Exotic</li>
@@ -62,9 +59,6 @@
       <texPath>Things/Item/Blueprints/Blueprint_Old</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	  <itemGeneratorTags>
-      <li>SpecialReward</li>
-    </itemGeneratorTags>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <stackLimit>5</stackLimit>
     <tradeNeverStack>true</tradeNeverStack>
@@ -80,7 +74,7 @@
       <li>TechnologyBlueprints</li>
     </thingCategories>
     <drawGUIOverlay>true</drawGUIOverlay>
-    <tradeability>Stockable</tradeability>
+    <tradeability>All</tradeability>
     <techLevel>Medieval</techLevel>
     <tradeTags>
       <li>Exotic</li>
@@ -115,9 +109,6 @@
       <texPath>Things/Item/Blueprints/Blueprint_New</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	  <itemGeneratorTags>
-      <li>SpecialReward</li>
-    </itemGeneratorTags>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <stackLimit>5</stackLimit>
     <tradeNeverStack>true</tradeNeverStack>
@@ -133,7 +124,7 @@
       <li>TechnologyBlueprints</li>
     </thingCategories>
     <drawGUIOverlay>true</drawGUIOverlay>
-    <tradeability>Stockable</tradeability>
+    <tradeability>All</tradeability>
     <techLevel>Industrial</techLevel>
     <tradeTags>
       <li>Exotic</li>
@@ -168,9 +159,6 @@
       <texPath>Things/Item/Blueprints/Blueprint_New</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	  <itemGeneratorTags>
-      <li>SpecialReward</li>
-    </itemGeneratorTags>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <stackLimit>5</stackLimit>
     <tradeNeverStack>true</tradeNeverStack>
@@ -186,7 +174,7 @@
       <li>TechnologyBlueprints</li>
     </thingCategories>
     <drawGUIOverlay>true</drawGUIOverlay>
-    <tradeability>Stockable</tradeability>
+    <tradeability>All</tradeability>
     <techLevel>Spacer</techLevel>
     <tradeTags>
       <li>Exotic</li>

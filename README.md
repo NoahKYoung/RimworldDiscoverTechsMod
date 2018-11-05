@@ -1,6 +1,6 @@
 //// TECHNOLOGY BLUEPRINTS RIMWORLD MOD \\\\
 
-**Version 1.0.2**
+**Version 1.0.3**
 
 **Description:**
 This mod adds Technology Blueprints to the game. Discover the secrets of any research by using them!

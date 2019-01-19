@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Assemblies",
+    "\\Defs",
+    "\\Defs\\Recipes",
+    "\\Defs\\ResearchProjectDefs",
+    "\\Sources",
+    "\\Sources\\RimworldDiscoverTechs",
+    "\\Sources\\RimworldDiscoverTechs\\Classes"
   ],
-  "SelectedNode": "\\About",
+  "SelectedNode": "\\Sources\\RimworldDiscoverTechs\\Classes\\RimworldDiscoverTechsClass.cs",
   "PreviewInSolutionExplorer": false
 }

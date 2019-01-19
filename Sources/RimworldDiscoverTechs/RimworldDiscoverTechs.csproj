@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -70,7 +74,9 @@
     <Folder Include="obj\Release\TempPE\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About\About.xml" />
+    <Content Include="About\About.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="About\Preview.png" />
     <Content Include="bin\Release\RimworldDiscoverTechs.dll" />
     <Content Include="bin\Release\RimworldDiscoverTechs.pdb" />

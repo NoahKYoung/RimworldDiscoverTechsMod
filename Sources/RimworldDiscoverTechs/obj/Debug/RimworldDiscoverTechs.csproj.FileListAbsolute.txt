@@ -3,3 +3,8 @@ C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Sources\RimworldDiscover
 C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\obj\Debug\RimworldDiscoverTechs.dll
 C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\obj\Debug\RimworldDiscoverTechs.csprojResolveAssemblyReference.cache
 C:\Users\Noah\Documents\GitHub\RimworldDiscoverTechsMod\Assemblies\RimworldDiscoverTechs.dll.config
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimworldDiscoverTechsMod\Assemblies\RimworldDiscoverTechs.dll.config
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimworldDiscoverTechsMod\Assemblies\RimworldDiscoverTechs.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\obj\Debug\RimworldDiscoverTechs.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\obj\Debug\RimworldDiscoverTechs.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RimworldDiscoverTechsMod\Sources\RimworldDiscoverTechs\obj\Debug\RimworldDiscoverTechs.dll
